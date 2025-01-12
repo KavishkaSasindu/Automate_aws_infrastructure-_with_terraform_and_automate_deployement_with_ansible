@@ -1,0 +1,20 @@
+---
+- name: Provisioning webservers
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Instll Apache2
+      ansible.builtin.apt:
+        name: apache2
+        state: present
+
+    - name: Start Apache2 service
+      ansible.builtin.service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Copy index.html file
+      ansible.builtin.copy:
+        src: 2137_barista_cafe/
+        dest: /var/www/html/

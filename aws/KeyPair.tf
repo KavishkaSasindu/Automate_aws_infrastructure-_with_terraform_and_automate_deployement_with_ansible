@@ -1,0 +1,4 @@
+resource "aws_key_pair" "ec2_key_pair" {
+  key_name   = "project-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC2T99wwXLc9tWYMdmv7PmuR/1HA2ckSrMwo9yb9djm6kN2X4cZ1FJfDgl+QK8XusmEHTBYMtAK85g7Ru9/HNgc7dx9zKYnjAKIQLStHUcehqCyFshKD949QwRttbqtu1srb0KDXyWI6A1tiWCJ/PZ6yy76KSjQ3RFacSvwxuRc195BcsCAsjinWGfTFl29YpoH2lY8U6XQCCOpbRZyhhlsIj/4l+EKyqeYdSJjME9D+bPDJRREHcaqWs4WnmtPLqnmAXbw0tzlcYiAupYKaZknPe2R3xcwwVTpEUkgKxtfXJ4lMSTLw/e8cN9tDeQHl9JgFh/2Ns4ZcYiwHtMs9rKzMzi2auD7t9GJQD48sp9ofPCJyAo9IZTVDe/TsiU/iKbuK/e5/eXRHrO5uBKYbeuO0EjxVgr7eGU+tQiGNN3ZnYPGyUR0bfBaUYRjAdAgLKxbzOiIJd87Lobt/hIG8LhuNhsjqhobDw0UypWkGBRVuOkeBq/PqXQA4Wy/DKqMrfc= ksdev@KSDEV"
+}
