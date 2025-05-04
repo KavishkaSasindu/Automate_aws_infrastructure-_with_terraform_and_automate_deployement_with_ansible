@@ -8,7 +8,7 @@ This project automates the provisioning of AWS infrastructure using **Terraform*
 
 > This illustrates how the folders and files are organized for both Terraform and Ansible.
 
-![Project Structure Diagram](diagram.png)
+![Project Structure Diagram](diagram.jpeg)
 
 ---
 
@@ -24,7 +24,7 @@ This project automates the provisioning of AWS infrastructure using **Terraform*
 
 > This shows how the infrastructure is provisioned using Terraform.
 
-![AWS Architecture Diagram](architecture.png)
+![AWS Architecture Diagram](architecture.jpeg)
 
 ---
 
