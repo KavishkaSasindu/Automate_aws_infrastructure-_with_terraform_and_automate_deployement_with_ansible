@@ -9,7 +9,7 @@ This project automates the provisioning of AWS infrastructure using **Terraform*
 > This illustrates how the folders and files are organized for both Terraform and Ansible.
 
 <p align="center">
-  <img src="diagram.jpeg" alt="AWS Architecture Diagram" width="600"/>
+  <img src="diagram.jpeg" alt="Project Diagram" width="600"/>
 </p>
 
 ---
@@ -26,7 +26,10 @@ This project automates the provisioning of AWS infrastructure using **Terraform*
 
 > This shows how the infrastructure is provisioned using Terraform.
 
-![AWS Architecture Diagram](architecture.jpeg)
+
+<p align="center">
+  <img src="architecture.jpeg" alt="AWS Architecture Diagram" width="600"/>
+</p>
 
 ---
 
@@ -61,3 +64,33 @@ Install the following:
 git clone https://github.com/KavishkaSasindu/Automate_aws_infrastructure-_with_terraform_and_automate_deployement_with_ansible.git
 cd Automate_aws_infrastructure-_with_terraform_and_automate_deployement_with_ansible
 ```
+
+### Step 2: Initialize AWS
+
+```bash
+cd aws
+terraform init
+terraform apply
+```
+
+### Step 3: Update ansible inventory
+
+```bash
+[webservers]
+<your-ec2-public-ip> ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/YOUR_KEY.pem
+```
+
+### Step 4: Run ansible playbook
+
+```bash
+cd ../ansible
+ansible-playbook -i inventory playbook.yml
+```
+
+### To Clean Up
+
+```bash
+cd aws
+terraform destroy
+```
+
