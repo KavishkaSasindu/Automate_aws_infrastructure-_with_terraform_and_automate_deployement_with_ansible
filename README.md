@@ -4,6 +4,14 @@ This project automates the provisioning of AWS infrastructure using **Terraform*
 
 ---
 
+## 📁 Project Structure Diagram
+
+> This illustrates how the folders and files are organized for both Terraform and Ansible.
+
+![Project Structure Diagram](diagram.png)
+
+---
+
 ## 🧠 Project Goals
 
 - Use **Terraform** to create and manage AWS infrastructure (VPC, EC2, Security Groups).
@@ -19,12 +27,6 @@ This project automates the provisioning of AWS infrastructure using **Terraform*
 ![AWS Architecture Diagram](architecture.png)
 
 ---
-
-## 📁 Project Structure Diagram
-
-> This illustrates how the folders and files are organized for both Terraform and Ansible.
-
-![Project Structure Diagram](diagram.jpeg)
 
 ---
 
